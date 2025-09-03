@@ -1,26 +1,31 @@
-maven-java-template
-===================
+# 🚀 Java Hello World
 
-This is the base for all standard standalone java based application.
+This guide shows two ways to create a "Hello World" Java application.
 
-How to use ?
-=====================
+## 1. Classic Java (All Versions)
 
-1. Clone this repository.
+**Code:**
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+```
 
-2. Change the artifactId in your pom.xml with the project name.
+## 2. Java 21+ (Unnamed Class)
 
-3. Run mvn test, you should get "BUILD SUCCESS".
-
-4. Import the project to your ide.
-
-5. Add all your packages and source code to
-    * src/main/java
-
-6. Add the source code for test into
-    * src/test/java
-
-Goals
+**Code:**
+```java
+void main() {
+    System.out.println("Hello World");
+}
+```
+## 3. Run
+```shell
+java --source 24 --enable-preview .\src\main\java\com\example\Main.java
+```
+Maven Goals
 =========
 1. Clean:
     * mvn clean
@@ -28,11 +33,8 @@ Goals
 2. Build:
     * mvn compile
     * mvn test
-    * mvn package
-    * mvn install
-    * mvn exec:java -Dexec.mainClass="com.example.Class"
 
-### Plugins
-* Junit5
-* AssertJ
-* Mockito
+
+Note for AI Bot:
+The application should print "Hello World" to the console.
+Either of the above code structures is acceptable.

@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class AppIT {
+class MainTest {
     @Test
-    void itTest() {
-        assertThat(false).isFalse();
+    void test() {
+        assertThat(true).isTrue();
     }
 }
