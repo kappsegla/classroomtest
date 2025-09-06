@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "Test G",
+      "name": "Grading",
       "setup": "",
       "run": "mvn test",
       "input": "",
@@ -10,15 +10,5 @@
       "timeout": 10,
       "points": 1
     }
-//    ,{
-//      "name": "Test VG",
-//      "setup": "",
-//      "run": "mvn test -Dtest=PresentationTest",
-//      "input": "",
-//      "output": "",
-//      "comparison": "included",
-//      "timeout": 10,
-//      "points": 3
-//    }
   ]
 }
